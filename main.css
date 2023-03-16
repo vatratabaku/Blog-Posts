@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  gap: 3rem;
+  padding: 0 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ebf0f6;
+  color: #212529;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.add-blog {
+  flex: 1;
+  height: 600px;
+  background: #f8f9fa;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.add-title {
+  font-size: 2.2rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  display: block;
+  border-radius: 0.8rem;
+  border: none;
+  padding-left: 1rem;
+  color: #212529;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #212529;
+}
+
+textarea {
+  resize: none;
+  padding-top: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #13b5c7;
+}
+
+input,
+select {
+  height: 3.5rem;
+}
+
+.btn-add {
+  height: 4rem;
+  background: #13b5c7;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  margin-top: 1.2rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(0px);
+}
+
+.btn-add:hover {
+  background: #13b5c7;
+  transition: all 0.2s ease-in-out;
+}
+
+.show-blog {
+  flex: 2;
+  height: 600px;
+  background: #f8f9fa;
+  border-radius: 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  overflow-y: scroll;
+}
+
+.blog-item {
+  background: #f8f9fa;
+  color: #343a40;
+  border-radius: 2rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.blog-start {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.blog-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 2;
+}
+
+.blog-category {
+  color: #13b5c7;
+  font-size: 1.3rem;
+}
+
+.blog-date {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+}
+
+.blog-author {
+  font-size: 1.5rem;
+}
+
+.blog-img {
+  flex: 1;
+  width: 14rem;
+  height: 12rem;
+  object-fit: cover;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.blog-title {
+  font-size: 2rem;
+  width: 100%;
+  flex: 3 0 0;
+}
+
+.blog-content {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-read {
+  margin-right: 2rem;
+  height: 4rem;
+  background: #13b5c7;
+  color: white;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(0px);
+  padding: 0 1.5rem;
+  margin-left: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #20c997;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #13b5c7;
+}
+
+::-webkit-scrollbar-button {
+  height: 80px;
+}
+
+
